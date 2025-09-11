@@ -21,8 +21,10 @@ Inside of your Astro project, you'll see the following folders and files:
 │   │   └── Welcome.astro
 │   ├── layouts
 │   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+│   ├── pages
+│   │   └── index.astro
+│   └── styles
+│       └── global.css
 └── package.json
 ```
 
@@ -41,6 +43,12 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
+## Astro Starter Kit: Basics + Tailwind CSS
+
+```sh
+npm create astro@latest -- --template basics
+
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```
