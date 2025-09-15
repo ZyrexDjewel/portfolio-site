@@ -1,8 +1,25 @@
 ---
 import "../styles/global.css";
-import Counter from "../components/Counter.tsx";
+// import Counter from "../components/Counter.tsx"; // Test component
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import NavBar from "../components/NavBar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<div class="bg-blue-500 text-white p-8 rounded-lg">Tailwind is working!</div>
+<!-- <div class="bg-blue-500 text-white p-8 rounded-lg">Tailwind is working!</div>
 <h1 class="text-3xl font-bold mb-4">Astro + React (TS)</h1>
-<Counter client:load />
+<Counter client:load /> -->
+<BaseLayout title="Home">
+  <NavBar />
+  <main class="p-8">
+    <div class="my-3">
+      <p class="text-4xl font-semibold">Hi, I'm</p>
+      <h1 class="text-8xl font-bold my-3">Zyrex Djewel</h1>
+      <p class="text-2xl font-medium mt-10">
+        Aspiring full-stack developer with experience in
+      </p>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
