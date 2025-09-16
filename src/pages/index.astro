@@ -6,6 +6,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import NavBar from "../components/NavBar.astro";
 import Footer from "../components/Footer.astro";
 import Tabs from "../components/AboutMeTabs.tsx";
+import ProjectCard from "../components/ProjectCard.astro";
 ---
 
 <!-- <div class="bg-blue-500 text-white p-8 rounded-lg">Tailwind is working!</div>
@@ -47,6 +48,48 @@ import Tabs from "../components/AboutMeTabs.tsx";
           <Tabs client:load />
         </div>
       </div>
+    </div>
+    <!-- Section 3 -->
+    <div class="mt-10">
+      <div class="text-center max-w-4xl mx-auto px-4">
+        <h3 class="text-2xl md:text-4xl text-[#1C1C1C] font-bold">Projects</h3>
+        <p class="md:text-lg lg:text-2xl text-[#1C1C1C] pt-4">
+          Take a look at my selected projects in software engineering and other
+          computer science field
+        </p>
+        <button
+        class="md:text-lg lg:text-2xl mt-6 px-4 py-2 bg-[#C69749] text-white font-semibold rounded-md shadow hover:bg-[#a87c37] transition"
+      >
+        View More 
+      </button>
+      </div>
+      
+      <div class="pt-10">
+        <ProjectCard
+          image="/projects/seaxchange.png"
+          title="SeaXChange"
+          description="SeaXChange is a blockchain driven web application system, intended for providing traceability of products within small-scale  tuna supply chain. "
+          technologies="Developed using Hyperledger Fabric, Docker, GCP, Next.js, and Node.js with Express.js."
+          link="https://github.com/jeffrouzel/SeaXChange-Web.git"
+        />
+        <!-- Project 2 -->
+        <ProjectCard
+          image="/projects/magsasakay.png"
+          title="Magsasakay"
+          description="A commute app intended for locals and tourists of Iloilo City."
+          technologies="React, Node.js, Express.js, MongoDB, Leaflet"
+          link="https://github.com/KristianLyle/Magsasakay.git"
+        />
+        <!-- Project 3 -->
+        <ProjectCard
+          image="/projects/pawlorie.png"
+          title="Pawlorie"
+          description="A mobile app for tracking calories for different dog breeds."
+          technologies="Flutter, Firebase"
+          link="https://drive.google.com/drive/u/0/folders/1CLrktpdMVsoL1vYd78AbCGfy6aNsVHZt"
+        />
+      </div>
+      <!-- Project 1 -->
     </div>
   </main>
 
