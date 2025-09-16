@@ -5,10 +5,10 @@ export default function Tabs() {
 
   return (
     <div className="flex flex-col"> 
-      <div className="flex justify-center gap-6 pt-12">
+      <div className="flex gap-2 md:gap-6 pt-4 lg:pt-12 overflow-x-scroll">
         <button
           onClick={() => setActiveTab("languages")}
-          className={`text-base md:text-2xl font-semibold transition ${
+          className={`text-sm md:text-base lg:text-2xl font-semibold transition ${
             activeTab === "languages"
               ? "text-[#C69749]"
               : "text-[#F5F5F5] hover:text-[#C69749]"
@@ -18,7 +18,7 @@ export default function Tabs() {
         </button>
         <button
           onClick={() => setActiveTab("tech-stack")}
-          className={`text-base md:text-2xl font-semibold transition ${
+          className={`text-sm md:text-base lg:text-2xl font-semibold transition ${
             activeTab === "tech-stack"
               ? "text-[#C69749]"
               : "text-[#F5F5F5] hover:text-[#C69749]"
@@ -28,7 +28,7 @@ export default function Tabs() {
         </button>
         <button
           onClick={() => setActiveTab("tools")}
-          className={`text-base md:text-2xl font-semibold transition ${
+          className={`text-sm md:text-base lg:text-2xl font-semibold transition ${
             activeTab === "tools"
               ? "text-[#C69749]"
               : "text-[#F5F5F5] hover:text-[#C69749]"
@@ -38,7 +38,7 @@ export default function Tabs() {
         </button>
         <button
           onClick={() => setActiveTab("others")}
-          className={`text-base md:text-2xl font-semibold transition ${
+          className={`text-sm md:text-base lg:text-2xl font-semibold transition ${
             activeTab === "others"
               ? "text-[#C69749]"
               : "text-[#F5F5F5] hover:text-[#C69749]"
@@ -49,7 +49,7 @@ export default function Tabs() {
       </div>
 
       {/* Tab Contents */}
-      <div className="mt-8 ml-10 text-[#F5F5F5] text-base md:text-2xl  text-left">
+      <div className="mt-8 ml-10 text-[#F5F5F5] text-sm md:text-base lg:text-2xl  text-left">
         {activeTab === "languages" && (
             <ul className="list-disc list-inside space-y-2">
             <li>JavaScript</li>
