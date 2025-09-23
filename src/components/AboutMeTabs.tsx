@@ -49,7 +49,7 @@ export default function Tabs() {
       </div>
 
       {/* Tab Contents */}
-      <div className="mt-8 ml-10 text-[#F5F5F5] text-sm md:text-base lg:text-2xl  text-left">
+      <div className="mt-8 ml-10 text-[#F5F5F5] text-sm md:text-base lg:text-xl  text-left">
         {activeTab === "languages" && (
             <ul className="list-disc list-inside space-y-2">
             <li>JavaScript</li>
