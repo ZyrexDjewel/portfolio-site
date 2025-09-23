@@ -1,0 +1,68 @@
+---
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import NavBar from "../components/NavBar.astro";
+import Footer from "../components/Footer.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+---
+
+<BaseLayout title="Projects">
+  <NavBar />
+  <main>
+    <div class="py-6 gap-y-4 mt-10 mb-5">
+      <div class="flex justify-center">
+        <h1 class="text-3xl font-bold">Previous Projects</h1>
+      </div>
+    </div>
+    <!-- Previous Projects -->
+    <!-- Project 4 -->
+    <ProjectCard
+      image="/projects/unity_proj.png"
+      title="BooRats!"
+      description="A 3D parkour game where you play as a rat utilizing power-ups avoiding obstacles and collecting cheese. It has 3 maps with single-player and two-player modes."
+      technologies="Unity 3D, C#"
+      link="https://github.com/Megunut/CMSC197-Final-Project.git"
+    />
+    <!-- Project 5 -->
+    <ProjectCard
+      image="/projects/ml_proj.png"
+      title="Sentiment Analysis of Emotions"
+      description="A final term project that analyzes the sentiment of social media statuses using machine learning algorithms such as Logistic Regression, XG-Boost, and Random Forest."
+      technologies="Python, Jupyter Notebook, Scikit-learn, Pandas, Anaconda"
+      link="https://github.com/kanon0930/CMSC-197/tree/b9f9f1f328088d363a8841be3223c1add5f12423/Mini%20Project"
+    />
+    <!-- Project 6 -->
+    <ProjectCard
+      image="/projects/menu-do.png"
+      title="Menu-Do"
+      description="A simple restaurant website that provides a menu with ratings and reviews from customers."
+      technologies="HTML, CSS, JavaScript, MySQL, PHP"
+      link="https://github.com/Gab4code/Menu-do.git"
+    />
+    <!-- Project 1 -->
+    <ProjectCard
+      image="/projects/seaxchange.png"
+      title="SeaXChange"
+      description="SeaXChange is a blockchain driven web application system, intended for providing traceability of products within small-scale  tuna supply chain. "
+      technologies="Developed using Hyperledger Fabric, Docker, GCP, Next.js, and Node.js with Express.js."
+      link="https://github.com/jeffrouzel/SeaXChange-Web.git"
+    />
+    <!-- Project 2 -->
+    <ProjectCard
+      image="/projects/magsasakay.png"
+      title="Magsasakay"
+      description="A commute app intended for locals and tourists of Iloilo City."
+      technologies="React, Node.js, Express.js, MongoDB, Leaflet"
+      link="https://github.com/KristianLyle/Magsasakay.git"
+    />
+    <!-- Project 3 -->
+    <ProjectCard
+      image="/projects/pawlorie.png"
+      title="Pawlorie"
+      description="A mobile app for tracking calories for different dog breeds."
+      technologies="Flutter, Firebase"
+      link="https://drive.google.com/drive/u/0/folders/1CLrktpdMVsoL1vYd78AbCGfy6aNsVHZt"
+    />
+  </main>
+  <Footer />
+</BaseLayout>
