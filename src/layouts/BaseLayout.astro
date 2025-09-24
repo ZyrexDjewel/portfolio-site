@@ -4,6 +4,8 @@ interface Props {
 }
 
 const { title = "My Portfolio" } = Astro.props as Props;
+
+import SmoothScroll from "../components/SmoothScroll.tsx";
 ---
 
 <html lang="en">
@@ -15,6 +17,8 @@ const { title = "My Portfolio" } = Astro.props as Props;
     <title>{title}</title>
   </head>
   <body>
-    <slot />
+    <SmoothScroll client:load>
+      <slot />
+    </SmoothScroll>
   </body>
 </html>
