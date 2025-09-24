@@ -23,7 +23,7 @@ export default function DownloadCV() {
     <div>
       <button
         onClick={() => setShowModal(true)}
-        className="mt-6 px-4 py-2 bg-[#C69749] text-white font-semibold rounded-md shadow hover:bg-[#a87c37] transition"
+        className="mt-2 px-4 py-2 bg-[#C69749] text-white font-semibold rounded-md shadow hover:bg-[#a87c37] transition"
       >
         Download CV
       </button>
