@@ -60,7 +60,13 @@ function navClass(path: string) {
       <a href="/" class={navClass("/")}>About Me</a>
       <a href="/projects" class={navClass("/projects")}>Projects</a>
       <a href="/milestones" class={navClass("/milestones")}>Milestones</a>
-      <a href="#contact" class={navClass("/contact")}>Contact</a>
+      <a
+        href="#"
+        class={navClass("/contact")}
+        onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }); return false;"
+      >
+        Contact
+      </a>
     </div>
   </div>
 
@@ -74,7 +80,13 @@ function navClass(path: string) {
     <a href="/" class={navClass("/")}>About Me</a>
     <a href="/projects" class={navClass("/projects")}>Projects</a>
     <a href="/milestones" class={navClass("/milestones")}>Milestones</a>
-    <a href="#contact" class={navClass("/contact")}>Contact</a>
+    <a
+      href="#"
+      class={navClass("/contact")}
+      onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }); return false;"
+    >
+      Contact
+    </a>
   </div>
 </div>
 
@@ -92,4 +104,14 @@ function navClass(path: string) {
     document.body.classList.toggle("overflow-hidden");
   };
   menuBtn?.addEventListener("click", toggleMenu);
+
+  const mobileLinks = mobileMenu?.querySelectorAll("a");
+  mobileLinks?.forEach((link) => {
+    link.addEventListener("click", () => {
+      // Close menu if it's open
+      if (mobileMenu && mobileMenu.classList.contains("translate-x-0")) {
+        toggleMenu();
+      }
+    });
+  });
 </script>
