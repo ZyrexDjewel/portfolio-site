@@ -6,8 +6,8 @@ export default function Tabs() {
   const tabClasses = (tab: string) => `
     relative text-sm md:text-base lg:text-2xl font-semibold
     ${activeTab === tab ? "text-[#C69749]" : "text-[#F5F5F5]"}
-    after:content-[''] after:absolute after:left-0 after:-bottom-4 
-    after:h-[6px] after:bg-[#C69749] after:transition-all after:duration-800 
+    after:content-[''] after:absolute after:left-0 after:-bottom-2 lg:after:-bottom-4 
+    after:h-[3px] lg:after:h-[6px] after:bg-[#C69749] after:transition-all after:duration-800 
     ${activeTab === tab ? "after:w-full" : "after:w-0 hover:after:w-full"}
   `;
 
